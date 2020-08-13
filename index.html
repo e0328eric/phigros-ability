@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Phigros Ability Test</title>
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <header>
+            <h2>Phigros Ability Test</h2>
+        </header>
+        <main>
+            <form id="cal-ability">
+                <div class="container">
+                    <h2>Select Level</h2>
+                    <select id="level-select" name="level">
+                        <option selected hidden>Choose here</option>
+                        <option value="0">皆傳</option>
+                        <option value="1">中傳</option>
+                        <option value="2">十段</option>
+                        <option value="3">九段</option>
+                        <option value="4">八段</option>
+                    </select>
+                </div>
+                <div id="main-show">
+                    <div class="container">
+                        <h2>Song Name</h2>
+                        <h4 id="song-name"></h4>
+                        <img id="song-img" src="" alt="Not Implemented Yet" />
+                    </div>
+                    <div class="container">
+                        <h2>Input Datas</h2>
+                        <div class="data-collect">
+                            <h3>Great:</h3>
+                            <input
+                                id="great-val"
+                                type="number"
+                                placeholder="Input the great value of that song"
+                            />
+                        </div>
+                        <div class="data-collect">
+                            <h3>Bad:</h3>
+                            <input
+                                id="bad-val"
+                                type="number"
+                                placeholder="Input the bad value of that song"
+                            />
+                        </div>
+                        <div class="data-collect">
+                            <h3>Miss:</h3>
+                            <input
+                                id="miss-val"
+                                type="number"
+                                placeholder="Input the miss value of that song"
+                            />
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" />
+                </div>
+            </form>
+        </main>
+        <script type="module" src="js/main.js"></script>
+    </body>
+</html>
