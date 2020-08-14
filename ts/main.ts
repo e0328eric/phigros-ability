@@ -3,6 +3,8 @@ import * as SD from "./SongData.js";
 import { PhigrosAbility } from "./ability.js";
 
 // Start the phigros ability
+var nextSongData = 0;
+var ability: PhigrosAbility;
 var mainShow = document.querySelector("#main-show") as HTMLDivElement;
 var takeLevel = document.querySelector(
     "#select-difficulty"
@@ -29,8 +31,8 @@ function startPhigrosAbility(e: Event) {
     mainShow.style.display = "block";
 
     // Initial variables
-    var nextSongData = 0;
-    var ability = new PhigrosAbility(takeLevel.value);
+    nextSongData = 0;
+    ability = new PhigrosAbility(takeLevel.value);
     // console.log(ability.difficulty);
 
     // Change a name and a picture of a given song
