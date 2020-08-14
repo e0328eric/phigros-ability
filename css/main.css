@@ -62,15 +62,22 @@ main {
   width: 70%;
   padding: 1rem 0; }
 
-.container {
+.container,
+.life-container {
   margin-bottom: 2rem; }
-  .container h3 {
+  .container h3,
+  .life-container h3 {
     font-family: "Oswald" sans-serif;
     font-weight: 900;
     font-size: 2.5rem; }
-  .container h4 {
+  .container h4,
+  .life-container h4 {
     font-family: "Oswald" sans-serif;
     font-size: 2rem; }
+
+.life-container h3,
+.life-container h4 {
+  display: inline; }
 
 .data-collect {
   width: 40%;

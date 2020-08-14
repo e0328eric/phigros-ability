@@ -81,7 +81,8 @@ main {
     }
 }
 
-.container {
+.container,
+.life-container {
     margin-bottom: 2rem;
     h3 {
         font-family: "Oswald" sans-serif;
@@ -91,6 +92,13 @@ main {
     h4 {
         font-family: "Oswald" sans-serif;
         font-size: 2rem;
+    }
+}
+
+.life-container {
+    h3,
+    h4 {
+        display: inline;
     }
 }
 
