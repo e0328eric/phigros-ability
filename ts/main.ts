@@ -33,7 +33,6 @@ function startPhigrosAbility(e: Event) {
     // Initial variables
     nextSongData = 0;
     ability = new PhigrosAbility(takeLevel.value);
-    // console.log(ability.difficulty);
 
     // Change a name and a picture of a given song
     remainLife.textContent = `${ability.life}%`;
