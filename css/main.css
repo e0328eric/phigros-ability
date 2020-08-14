@@ -54,9 +54,7 @@ main {
   padding-right: 0.5rem; }
 
 .song-container img {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(25%);
   border-radius: 30px;
   max-width: 700px;
   width: 70%;
@@ -85,3 +83,14 @@ main {
   justify-content: space-between; }
   .data-collect input {
     width: 70%; }
+
+@media (max-width: 450px) {
+  header h1 {
+    font-size: 3.5rem; }
+  .select-container h2 {
+    font-size: 2rem; }
+  .life-container h3 {
+    font-size: 2rem; }
+  .song-container h3 {
+    display: block;
+    font-size: 2rem; } }
