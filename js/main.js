@@ -3,11 +3,12 @@ import * as SD from "./SongData.js";
 import { PhigrosAbility } from "./ability.js";
 // Start the phigros ability
 var mainShow = document.querySelector("#main-show");
-var takeLevel = document.querySelector("#level-select");
+var takeLevel = document.querySelector("#select-difficulty");
 window.onbeforeunload = () => {
     takeLevel.value = "Choose here";
 };
 takeLevel.addEventListener("change", startPhigrosAbility);
+// Main part of the phigros test
 function startPhigrosAbility(e) {
     e.preventDefault();
     mainShow.style.display = "block";

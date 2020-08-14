@@ -1,15 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Open+Sans:wght@400;700&family=Oswald:wght@700&display=swap");
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 11px;
 }
 
-img {
-    border-radius: 8px;
-    max-width: 700px;
-    width: 50%;
+body {
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 #main-show {
     display: none;
+}
+
+// Header part
+header {
+    text-align: center;
+    background-color: #7bd5e6;
+
+    h1 {
+        font-family: "Oswald", sans-serif;
+        font-size: 4.5rem;
+        padding: 1rem 0;
+    }
+}
+
+// Main part
+main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    hr {
+        margin: 1rem 0;
+    }
+    input[type="submit"] {
+        width: 100%;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+}
+
+#cal-ability {
+    width: 100%;
+}
+
+.select-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: 3rem;
+        margin-right: auto;
+    }
+    #select-difficulty {
+        font-size: 1.5rem;
+    }
+}
+
+.song-container {
+    h3 {
+        display: inline;
+        font-family: "Oswald" sans-serif;
+        font-weight: 900;
+        font-size: 2.5rem;
+        padding-right: 0.5rem;
+    }
+    img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 30px;
+        max-width: 700px;
+        width: 70%;
+        padding: 1rem 0;
+    }
+}
+
+.container {
+    margin-bottom: 2rem;
+    h3 {
+        font-family: "Oswald" sans-serif;
+        font-weight: 900;
+        font-size: 2.5rem;
+    }
+    h4 {
+        font-family: "Oswald" sans-serif;
+        font-size: 2rem;
+    }
+}
+
+.data-collect {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+
+    input {
+        width: 70%;
+    }
 }

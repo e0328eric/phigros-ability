@@ -4,12 +4,15 @@ import { PhigrosAbility } from "./ability.js";
 
 // Start the phigros ability
 var mainShow = document.querySelector("#main-show") as HTMLDivElement;
-var takeLevel = document.querySelector("#level-select") as HTMLSelectElement;
+var takeLevel = document.querySelector(
+    "#select-difficulty"
+) as HTMLSelectElement;
 window.onbeforeunload = () => {
     takeLevel.value = "Choose here";
 };
 takeLevel.addEventListener("change", startPhigrosAbility);
 
+// Main part of the phigros test
 function startPhigrosAbility(e: Event) {
     e.preventDefault();
     mainShow.style.display = "block";
