@@ -4,7 +4,8 @@
 const lifeDamage = [
     [1, 2, 4, 20],
     [0.5, 2, 4, 22.5],
-    [0, 1, 3, 47.5],
+    [0, 2, 3, 47.5],
+    [0, 1, 2, 47.5],
 ];
 export class PhigrosAbility {
     constructor(difficulty) {
