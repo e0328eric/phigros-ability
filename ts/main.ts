@@ -1,12 +1,12 @@
 // Import song datas
-import * as SD from "./SongData.js";
-import { PhigrosAbility } from "./ability.js";
+import { testLevels } from "./SongData.js";
+import { PhigrosAbility } from "./PhigrosAbility.js";
 
 // Start the phigros ability
-var nextSongData = 0;
-var ability: PhigrosAbility;
-var mainShow = document.querySelector("#main-show") as HTMLDivElement;
-var takeLevel = document.querySelector(
+let nextSongData = 0;
+let ability: PhigrosAbility;
+let mainShow = document.querySelector("#main-show") as HTMLDivElement;
+let takeLevel = document.querySelector(
     "#select-difficulty"
 ) as HTMLSelectElement;
 window.onbeforeunload = () => {
@@ -17,12 +17,12 @@ takeLevel.addEventListener("change", startPhigrosAbility);
 // Main part of the phigros test
 function startPhigrosAbility(e: Event) {
     // Collect datas
-    var greatVal = document.querySelector("#great-val") as HTMLInputElement;
-    var badVal = document.querySelector("#bad-val") as HTMLInputElement;
-    var missVal = document.querySelector("#miss-val") as HTMLInputElement;
-    var songName = document.querySelector("#song-name") as HTMLHeadElement;
-    var songImage = document.querySelector("#song-img") as HTMLImageElement;
-    var remainLife = document.querySelector("#current-life") as HTMLHeadElement;
+    let greatVal = document.querySelector("#great-val") as HTMLInputElement;
+    let badVal = document.querySelector("#bad-val") as HTMLInputElement;
+    let missVal = document.querySelector("#miss-val") as HTMLInputElement;
+    let songName = document.querySelector("#song-name") as HTMLHeadElement;
+    let songImage = document.querySelector("#song-img") as HTMLImageElement;
+    let remainLife = document.querySelector("#current-life") as HTMLHeadElement;
 
     // Collect the level of the ability test
     var submitBtn = document.querySelector("input[type='submit']")!;
@@ -33,11 +33,12 @@ function startPhigrosAbility(e: Event) {
     // Initial variables
     nextSongData = 0;
     ability = new PhigrosAbility(takeLevel.value);
+    localStorage.setItem("cur-diff", takeLevel.value);
 
     // Change a name and a picture of a given song
     remainLife.textContent = `${ability.life}%`;
-    songName.textContent = SD.testLevels[ability.difficulty][nextSongData].name;
-    songImage.src = SD.testLevels[ability.difficulty][nextSongData].picture;
+    songName.textContent = testLevels[ability.difficulty][nextSongData].name;
+    songImage.src = testLevels[ability.difficulty][nextSongData].picture;
 
     submitBtn.addEventListener("click", (e) => {
         e.preventDefault();
@@ -47,7 +48,7 @@ function startPhigrosAbility(e: Event) {
         if (Number.isNaN(great) || Number.isNaN(bad) || Number.isNaN(miss)) {
         } else {
             ability.changeLife(
-                SD.testLevels[ability.difficulty][nextSongData].totalNote,
+                testLevels[ability.difficulty][nextSongData].totalNote,
                 great,
                 bad,
                 miss
@@ -57,19 +58,23 @@ function startPhigrosAbility(e: Event) {
                 if (nextSongData < 4) {
                     remainLife.textContent = `${ability.life.toFixed(2)}%`;
                     songName.textContent =
-                        SD.testLevels[ability.difficulty][nextSongData].name;
+                        testLevels[ability.difficulty][nextSongData].name;
                     songImage.src =
-                        SD.testLevels[ability.difficulty][nextSongData].picture;
+                        testLevels[ability.difficulty][nextSongData].picture;
                     greatVal.value = "";
                     badVal.value = "";
                     missVal.value = "";
                 } else {
                     alert("Cleared!!");
-                    window.location.reload();
+                    localStorage.setItem(
+                        "remaining-life",
+                        ability.life.toFixed(2).toString()
+                    );
+                    window.document.location.pathname = "./success.html";
                 }
             } else {
                 alert("Game Over: Life is zero");
-                window.location.reload();
+                window.document.location.pathname = "./failed.html";
             }
         }
     });

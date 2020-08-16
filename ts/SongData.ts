@@ -10,7 +10,16 @@ class SongData {
     }
 }
 
-export var testLevels: SongData[][] = [];
+export let levelName: string[] = [
+    "???",
+    "皆傳",
+    "中傳",
+    "十段",
+    "九段",
+    "八段",
+];
+
+export let testLevels: SongData[][] = [];
 // Data of 皆傳
 testLevels.push([
     new SongData(

@@ -5,7 +5,15 @@ class SongData {
         this.totalNote = totalNote;
     }
 }
-export var testLevels = [];
+export let levelName = [
+    "???",
+    "皆傳",
+    "中傳",
+    "十段",
+    "九段",
+    "八段",
+];
+export let testLevels = [];
 // Data of 皆傳
 testLevels.push([
     new SongData("Aleph-0 (IN: lv15)", "https://vignette.wikia.nocookie.net/phigros/images/c/c7/Aleph-0_jacket.png/revision/latest/scale-to-width-down/690?cb=20200329131335", 684),

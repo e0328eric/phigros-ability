@@ -1,11 +1,11 @@
 // Import song datas
-import * as SD from "./SongData.js";
-import { PhigrosAbility } from "./ability.js";
+import { testLevels } from "./SongData.js";
+import { PhigrosAbility } from "./PhigrosAbility.js";
 // Start the phigros ability
-var nextSongData = 0;
-var ability;
-var mainShow = document.querySelector("#main-show");
-var takeLevel = document.querySelector("#select-difficulty");
+let nextSongData = 0;
+let ability;
+let mainShow = document.querySelector("#main-show");
+let takeLevel = document.querySelector("#select-difficulty");
 window.onbeforeunload = () => {
     takeLevel.value = "Choose here";
 };
@@ -13,12 +13,12 @@ takeLevel.addEventListener("change", startPhigrosAbility);
 // Main part of the phigros test
 function startPhigrosAbility(e) {
     // Collect datas
-    var greatVal = document.querySelector("#great-val");
-    var badVal = document.querySelector("#bad-val");
-    var missVal = document.querySelector("#miss-val");
-    var songName = document.querySelector("#song-name");
-    var songImage = document.querySelector("#song-img");
-    var remainLife = document.querySelector("#current-life");
+    let greatVal = document.querySelector("#great-val");
+    let badVal = document.querySelector("#bad-val");
+    let missVal = document.querySelector("#miss-val");
+    let songName = document.querySelector("#song-name");
+    let songImage = document.querySelector("#song-img");
+    let remainLife = document.querySelector("#current-life");
     // Collect the level of the ability test
     var submitBtn = document.querySelector("input[type='submit']");
     e.preventDefault();
@@ -26,10 +26,11 @@ function startPhigrosAbility(e) {
     // Initial variables
     nextSongData = 0;
     ability = new PhigrosAbility(takeLevel.value);
+    localStorage.setItem("cur-diff", takeLevel.value);
     // Change a name and a picture of a given song
     remainLife.textContent = `${ability.life}%`;
-    songName.textContent = SD.testLevels[ability.difficulty][nextSongData].name;
-    songImage.src = SD.testLevels[ability.difficulty][nextSongData].picture;
+    songName.textContent = testLevels[ability.difficulty][nextSongData].name;
+    songImage.src = testLevels[ability.difficulty][nextSongData].picture;
     submitBtn.addEventListener("click", (e) => {
         e.preventDefault();
         var great = parseInt(greatVal.value);
@@ -38,27 +39,28 @@ function startPhigrosAbility(e) {
         if (Number.isNaN(great) || Number.isNaN(bad) || Number.isNaN(miss)) {
         }
         else {
-            ability.changeLife(SD.testLevels[ability.difficulty][nextSongData].totalNote, great, bad, miss);
+            ability.changeLife(testLevels[ability.difficulty][nextSongData].totalNote, great, bad, miss);
             if (ability.life > 0) {
                 nextSongData++;
                 if (nextSongData < 4) {
                     remainLife.textContent = `${ability.life.toFixed(2)}%`;
                     songName.textContent =
-                        SD.testLevels[ability.difficulty][nextSongData].name;
+                        testLevels[ability.difficulty][nextSongData].name;
                     songImage.src =
-                        SD.testLevels[ability.difficulty][nextSongData].picture;
+                        testLevels[ability.difficulty][nextSongData].picture;
                     greatVal.value = "";
                     badVal.value = "";
                     missVal.value = "";
                 }
                 else {
                     alert("Cleared!!");
-                    window.location.reload();
+                    localStorage.setItem("remaining-life", ability.life.toFixed(2).toString());
+                    window.document.location.pathname = "./success.html";
                 }
             }
             else {
                 alert("Game Over: Life is zero");
-                window.location.reload();
+                window.document.location.pathname = "./failed.html";
             }
         }
     });
