@@ -28,7 +28,7 @@ function startPhigrosAbility(e: Event) {
     var submitBtn = document.querySelector("input[type='submit']")!;
 
     e.preventDefault();
-    mainShow.style.display = "block";
+    mainShow.classList.remove("hidden");
 
     // Initial variables
     nextSongData = 0;

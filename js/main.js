@@ -22,7 +22,7 @@ function startPhigrosAbility(e) {
     // Collect the level of the ability test
     var submitBtn = document.querySelector("input[type='submit']");
     e.preventDefault();
-    mainShow.style.display = "block";
+    mainShow.classList.remove("hidden");
     // Initial variables
     nextSongData = 0;
     ability = new PhigrosAbility(takeLevel.value);

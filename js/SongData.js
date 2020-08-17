@@ -5,14 +5,7 @@ class SongData {
         this.totalNote = totalNote;
     }
 }
-export let levelName = [
-    "???",
-    "皆傳",
-    "中傳",
-    "十段",
-    "九段",
-    "八段",
-];
+export let levelName = ["???", "皆傳", "中傳", "十段", "九段"];
 export let testLevels = [];
 // Data of 皆傳
 testLevels.push([

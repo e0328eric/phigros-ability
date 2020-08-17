@@ -1,72 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Phigros Ability Test</title>
-        <link rel="stylesheet" href="css/main.css" />
-    </head>
-    <body>
-        <header>
-            <h1>Phigros Ability Test</h1>
-        </header>
-        <main>
-            <form id="cal-ability">
-                <hr />
-                <div class="select-container">
-                    <h2>Select Difficulty</h2>
-                    <select id="select-difficulty" name="difficulty">
-                        <option selected hidden>Choose here</option>
-                        <option value="0">皆傳</option>
-                        <option value="1">中傳</option>
-                        <option value="2">十段</option>
-                        <option value="3">九段</option>
-                        <option value="4">八段</option>
-                    </select>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phigros Ability Test</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="w-full">
+    <header class="p-4 text-center bg-blue-300 mb-4">
+        <h1 class="text-4xl font-bold">Phigros Ability Test</h1>
+    </header>
+    <main class="m-12">
+        <form id="cal-ability">
+            <div class="flex justify-between">
+                <h2 class="font-bold text-2xl">Select Difficulty</h2>
+                <select id="select-difficulty" name="difficulty">
+                    <option selected hidden>Choose here</option>
+                    <option value="0">皆傳</option>
+                    <option value="1">中傳</option>
+                    <option value="2">十段</option>
+                    <option value="3">九段</option>
+                    <!-- <option value="4">八段</option> -->
+                </select>
+            </div>
+            <div class="hidden" id="main-show">
+                <div class="flex items-center">
+                    <h2 class="font-bold text-2xl">Song Name :</h2>
+                    <h3 class="font-bold text-2xl pl-2" id="song-name"></h3>
                 </div>
-                <hr />
-                <div id="main-show">
-                    <div class="song-container">
-                        <h3>Song Name :</h3>
-                        <h3 id="song-name"></h3>
-                        <img id="song-img" src="" alt="Not Implemented Yet" />
-                    </div>
-                    <div class="life-container">
-                        <h3>Remaining Life :</h3>
-                        <h4 id="current-life"></h4>
-                    </div>
-                    <div class="container">
-                        <h3>Input Datas</h3>
-                        <div class="data-collect">
-                            <h4>Great:</h4>
-                            <input
-                                id="great-val"
-                                type="number"
-                                placeholder="The number of great notes"
-                            />
-                        </div>
-                        <div class="data-collect">
-                            <h4>Bad:</h4>
-                            <input
-                                id="bad-val"
-                                type="number"
-                                placeholder="The number of bad notes"
-                            />
-                        </div>
-                        <div class="data-collect">
-                            <h4>Miss:</h4>
-                            <input
-                                id="miss-val"
-                                type="number"
-                                placeholder="The number of miss notes"
-                            />
-                        </div>
-                    </div>
-                    <hr />
-                    <input type="submit" value="Submit" />
+                <img id="song-img" src="" alt="Not Implemented Yet" />
+                <div class="flex items-center">
+                    <h2 class="font-bold text-2xl">Remaining Life :</h2>
+                    <h3 class="font-bold text-2xl pl-2" id="current-life"></h3>
                 </div>
-            </form>
-        </main>
-        <script type="module" src="js/main.js"></script>
-    </body>
+                <div class="container">
+                    <h3>Input Datas</h3>
+                    <div class="data-collect">
+                        <h4>Great:</h4>
+                        <input id="great-val" type="number" placeholder="The number of great notes" />
+                    </div>
+                    <div class="data-collect">
+                        <h4>Bad:</h4>
+                        <input id="bad-val" type="number" placeholder="The number of bad notes" />
+                    </div>
+                    <div class="data-collect">
+                        <h4>Miss:</h4>
+                        <input id="miss-val" type="number" placeholder="The number of miss notes" />
+                    </div>
+                </div>
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </main>
+    <script type="module" src="js/main.js"></script>
+</body>
+
 </html>
