@@ -23,6 +23,9 @@ function startPhigrosAbility(e) {
     var submitBtn = document.querySelector("input[type='submit']");
     e.preventDefault();
     mainShow.classList.remove("hidden");
+    mainShow.classList.add("grid");
+    mainShow.classList.add("md:grid-cols-2");
+    mainShow.classList.add("xl:grid-cols-4");
     // Initial variables
     nextSongData = 0;
     ability = new PhigrosAbility(takeLevel.value);
