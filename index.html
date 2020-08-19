@@ -12,13 +12,14 @@
     <header class="p-4 text-center bg-blue-300 mb-4">
         <h1 class="text-4xl font-bold">Phigros Ability Test</h1>
     </header>
-    <main class="m-12">
+    <main class="w-5/6 mx-auto mt-8">
         <form id="cal-ability">
             <div class="flex justify-between items-center">
                 <h2 class="font-bold text-base md:text-3xl">Select Difficulty</h2>
                 <div class="relative">
                     <select
-                        class="block appearance-none bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 rounded leading-tight cursor-pointer focus:outline-none focus:bg-gray-100 focus:border-gray-500 transition ease-out duration-300"
+                        class="block appearance-none bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4
+                        rounded leading-tight cursor-pointer focus:outline-none focus:bg-gray-100 focus:border-gray-500 transition ease-out duration-300"
                         id="select-difficulty" name="difficulty">
                         <option selected hidden>Choose here</option>
                         <option value="0">皆傳</option>
@@ -29,12 +30,15 @@
                     </select>
                 </div>
             </div>
-            <div class="bg-gray-100 mt-5 p-4 gap-5 hidden" id="main-show">
+            <div class="bg-gray-100 mt-5 p-4 hidden flex-col" id="main-show">
                 <!-- Song card -->
-                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                <div class="rounded overflow-hidden shadow-lg mb-8">
                     <img class="w-full" id="song-img" src="" alt="Not Implemented Yet" />
                     <div class="flex items-center">
                         <h2 class="font-bold text-2xl pl-2" id="song-name"></h2>
+                    </div>
+                    <div class="flex items-center">
+                        <h2 class="font-bold text-2xl pl-2" id="song-level"></h2>
                     </div>
                     <div class="flex items-center">
                         <h2 class="font-bold text-base md:text-2xl pl-2">Remaining Life :</h2>
@@ -43,17 +47,17 @@
                 </div>
                 <!-- End here -->
                 <!-- Input datas -->
-                <div class="max-w-sm rounded overflow-hidden shadow-lg p-4">
+                <div class="rounded overflow-hidden shadow-lg p-4">
                     <h3 class="mt-4 mb-3 font-bold text-2xl">Input Datas</h3>
-                    <div class="w-full md:w-11/12 mb-3 lg:flex lg:items-center lg:justify-between">
+                    <div class="mb-3 lg:flex lg:items-center lg:justify-between">
                         <h4 class="pr-5 font-bold">Great:</h4>
                         <input class="input-num" id="great-val" type="number" placeholder="The number of great notes" />
                     </div>
-                    <div class="w-full md:w-11/12 mb-3 lg:flex lg:items-center lg:justify-between">
+                    <div class="mb-3 lg:flex lg:items-center lg:justify-between">
                         <h4 class="pr-5">Bad:</h4>
                         <input class="input-num" id="bad-val" type="number" placeholder="The number of bad notes" />
                     </div>
-                    <div class="w-full md:w-11/12 mb-3 lg:flex lg:items-center lg:justify-between">
+                    <div class="mb-3 lg:flex lg:items-center lg:justify-between">
                         <h4 class="pr-5">Miss:</h4>
                         <input class="input-num" id="miss-val" type="number" placeholder="The number of miss notes" />
                     </div>

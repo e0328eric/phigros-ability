@@ -17,38 +17,41 @@ function startPhigrosAbility(e) {
     let badVal = document.querySelector("#bad-val");
     let missVal = document.querySelector("#miss-val");
     let songName = document.querySelector("#song-name");
+    let songLevel = document.querySelector("#song-level");
     let songImage = document.querySelector("#song-img");
     let remainLife = document.querySelector("#current-life");
     // Collect the level of the ability test
     var submitBtn = document.querySelector("input[type='submit']");
     e.preventDefault();
     mainShow.classList.remove("hidden");
-    mainShow.classList.add("grid");
-    mainShow.classList.add("md:grid-cols-2");
-    mainShow.classList.add("xl:grid-cols-4");
+    mainShow.classList.add("flex");
+    mainShow.classList.add("lg:grid");
+    mainShow.classList.add("lg:grid-cols-2");
     // Initial variables
     nextSongData = 0;
     ability = new PhigrosAbility(takeLevel.value);
     localStorage.setItem("cur-diff", takeLevel.value);
     // Change a name and a picture of a given song
+    let song = testLevels[ability.difficulty][nextSongData];
     remainLife.textContent = `${ability.life}%`;
-    songName.textContent = testLevels[ability.difficulty][nextSongData].name;
+    songName.textContent = song.name;
+    songLevel.textContent = `${song.songLevel.difficulty} | Level: ${song.songLevel.level}`;
     songImage.src = testLevels[ability.difficulty][nextSongData].picture;
     submitBtn.addEventListener("click", (e) => {
         e.preventDefault();
-        var great = parseInt(greatVal.value);
-        var bad = parseInt(badVal.value);
-        var miss = parseInt(missVal.value);
-        if (Number.isNaN(great) || Number.isNaN(bad) || Number.isNaN(miss)) {
-        }
-        else {
-            ability.changeLife(testLevels[ability.difficulty][nextSongData].totalNote, great, bad, miss);
+        let great = parseInt(greatVal.value);
+        let bad = parseInt(badVal.value);
+        let miss = parseInt(missVal.value);
+        if (!Number.isNaN(great) && !Number.isNaN(bad) && !Number.isNaN(miss)) {
+            ability.changeLife(song.totalNote, great, bad, miss);
             if (ability.life > 0) {
                 nextSongData++;
+                song = testLevels[ability.difficulty][nextSongData];
                 if (nextSongData < 4) {
                     remainLife.textContent = `${ability.life.toFixed(2)}%`;
                     songName.textContent =
                         testLevels[ability.difficulty][nextSongData].name;
+                    songLevel.textContent = `${song.songLevel.difficulty} | Level: ${song.songLevel.level}`;
                     songImage.src =
                         testLevels[ability.difficulty][nextSongData].picture;
                     greatVal.value = "";
