@@ -29,10 +29,10 @@ testLevels.push([
         1059
     ),
     new SongData(
-        "Aleph-0",
-        { difficulty: "Insane", level: 15 },
-        "https://vignette.wikia.nocookie.net/phigros/images/c/c7/Aleph-0_jacket.png/revision/latest/scale-to-width-down/690?cb=20200329131335",
-        684
+        "狂喜蘭舞",
+        { difficulty: "Another", level: 16 },
+        "https://vignette.wikia.nocookie.net/phigros/images/6/6e/%E7%8B%82%E5%96%9C%E8%98%AD%E8%88%9E_jacket.png/revision/latest/scale-to-width-down/690?cb=20200329130845",
+        1209
     ),
     new SongData(
         "望影の方舟Six",

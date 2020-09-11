@@ -11,7 +11,7 @@ export let testLevels = [];
 // Data of 皆傳
 testLevels.push([
     new SongData("Palescreen", { difficulty: "Insane", level: 15 }, "https://vignette.wikia.nocookie.net/phigros/images/1/1d/Palescreen_jacket.png/revision/latest/scale-to-width-down/690?cb=20200619093557", 1059),
-    new SongData("Aleph-0", { difficulty: "Insane", level: 15 }, "https://vignette.wikia.nocookie.net/phigros/images/c/c7/Aleph-0_jacket.png/revision/latest/scale-to-width-down/690?cb=20200329131335", 684),
+    new SongData("狂喜蘭舞", { difficulty: "Another", level: 16 }, "https://vignette.wikia.nocookie.net/phigros/images/6/6e/%E7%8B%82%E5%96%9C%E8%98%AD%E8%88%9E_jacket.png/revision/latest/scale-to-width-down/690?cb=20200329130845", 1209),
     new SongData("望影の方舟Six", { difficulty: "Insane", level: 15 }, "https://vignette.wikia.nocookie.net/phigros/images/6/62/%E6%9C%9B%E5%BD%B1%E3%81%AE%E6%96%B9%E8%88%9FSix_jacket.png/revision/latest?cb=20200901051750", 1066),
     new SongData("Igallta", { difficulty: "Another", level: 16 }, "https://vignette.wikia.nocookie.net/phigros/images/5/5d/Igallta_jacket.png/revision/latest/scale-to-width-down/690?cb=20200901051311", 1114),
 ]);
