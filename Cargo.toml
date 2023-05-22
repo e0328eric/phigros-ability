@@ -1,0 +1,16 @@
+[package]
+name = "phigros-ability"
+version = "0.1.0"
+authors = ["Sungbae Jeong <almagest0328@gmail.com>"]
+description = "Phigros Ability"
+repository = "https://github.com/e0328eric/phigros-ability.git"
+license = "MIT"
+edition = "2021"
+
+[dependencies]
+lazy_static = "1.4.0"
+leptos = "0.3.0"
+serde = { version = "1.0.163", features = ["derive"] }
+serde-wasm-bindgen = "0.5.0"
+serde_json = "1.0.96"
+wasm-bindgen = "0.2.86"

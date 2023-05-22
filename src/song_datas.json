@@ -1,0 +1,152 @@
+[
+  [
+    {
+      "name": "狂喜蘭舞",
+      "difficulty": "Another",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/6/6e/%E7%8B%82%E5%96%9C%E8%98%AD%E8%88%9E_jacket.png/revision/latest/scale-to-width-down/690?cb=20200329130845",
+      "level": 16,
+      "total_note": 1209
+    },
+    {
+      "name": "volcanic",
+      "difficulty": "Another",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/1/1d/Volcanic_jacket.png/revision/latest/scale-to-width-down/690?cb=20210430095809",
+      "level": 16,
+      "total_note": 1650
+    },
+    {
+      "name": "Igallta",
+      "difficulty": "Another",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/5/5d/Igallta_jacket.png/revision/latest/scale-to-width-down/690?cb=20200901051311",
+      "level": 16,
+      "total_note": 1114
+    },
+    {
+      "name": "Rrhar'il",
+      "difficulty": "Another",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/e/e5/Rrhar%27il_jacket.png/revision/latest?cb=20211023035116",
+      "level": 16,
+      "total_note": 1300
+    }
+  ],
+  [
+    {
+      "name": "Nhelv",
+      "difficulty": "Insane",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/f/fc/Nhelv_jacket.png/revision/latest?cb=20211023034705",
+      "level": 15,
+      "total_note": 833
+    },
+    {
+      "name": "CROSS†SOUL",
+      "difficulty": "Insane",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/1/13/CROSS%E2%80%A0SOUL_jacket.png/revision/latest/scale-to-width-down/690?cb=20200501090954",
+      "level": 15,
+      "total_note": 1305
+    },
+    {
+      "name": "Chronostasis",
+      "difficulty": "Insane",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/9/97/Chronostasis_jacket.png/revision/latest?cb=20200320103915",
+      "level": 15,
+      "total_note": 1156
+    },
+    {
+      "name": "Spasmodic",
+      "difficulty": "Another",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/1/1d/Spasmodic_jacket.png/revision/latest/scale-to-width-down/690?cb=20200329125334",
+      "level": 16,
+      "total_note": 1671
+    }
+  ],
+  [
+    {
+      "name": "Khronostasis Katharsis",
+      "difficulty": "Insane",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/1/11/Khronostasis_Katharsis_jacket.png/revision/latest/scale-to-width-down/690?cb=20200329131015",
+      "level": 14,
+      "total_note": 883
+    },
+    {
+      "name": "Cereris",
+      "difficulty": "Insane",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/7/7e/Cereris_new_jacket.png/revision/latest?cb=20211023035058",
+      "level": 14,
+      "total_note": 898
+    },
+    {
+      "name": "Reimei",
+      "difficulty": "Insane",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/5/55/Reimei_jacket.png/revision/latest?cb=20200329125155",
+      "level": 15,
+      "total_note": 983
+    },
+    {
+      "name": "GOODRAGE",
+      "difficulty": "Insane",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/1/11/GOODRAGE_jacket.png/revision/latest?cb=20200717162227",
+      "level": 15,
+      "total_note": 1034
+    }
+  ],
+  [
+    {
+      "name": "Khronostasis Katharsis",
+      "difficulty": "Insane",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/1/11/Khronostasis_Katharsis_jacket.png/revision/latest/scale-to-width-down/690?cb=20200329131015",
+      "level": 14,
+      "total_note": 883
+    },
+    {
+      "name": "Cereris",
+      "difficulty": "Insane",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/7/7e/Cereris_new_jacket.png/revision/latest?cb=20211023035058",
+      "level": 14,
+      "total_note": 898
+    },
+    {
+      "name": "Reimei",
+      "difficulty": "Insane",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/5/55/Reimei_jacket.png/revision/latest?cb=20200329125155",
+      "level": 15,
+      "total_note": 983
+    },
+    {
+      "name": "GOODRAGE",
+      "difficulty": "Insane",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/1/11/GOODRAGE_jacket.png/revision/latest?cb=20200717162227",
+      "level": 15,
+      "total_note": 1034
+    }
+  ],
+  [
+    {
+      "name": "Khronostasis Katharsis",
+      "difficulty": "Insane",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/1/11/Khronostasis_Katharsis_jacket.png/revision/latest/scale-to-width-down/690?cb=20200329131015",
+      "level": 14,
+      "total_note": 883
+    },
+    {
+      "name": "Cereris",
+      "difficulty": "Insane",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/7/7e/Cereris_new_jacket.png/revision/latest?cb=20211023035058",
+      "level": 14,
+      "total_note": 898
+    },
+    {
+      "name": "Reimei",
+      "difficulty": "Insane",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/5/55/Reimei_jacket.png/revision/latest?cb=20200329125155",
+      "level": 15,
+      "total_note": 983
+    },
+    {
+      "name": "GOODRAGE",
+      "difficulty": "Insane",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/1/11/GOODRAGE_jacket.png/revision/latest?cb=20200717162227",
+      "level": 15,
+      "total_note": 1034
+    }
+  ]
+]
