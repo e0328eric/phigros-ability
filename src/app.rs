@@ -16,13 +16,12 @@ lazy_static! {
         serde_json::from_str(include_str!("./song_datas.json")).unwrap();
 }
 
-const LEVEL_NAME: [&str; 5] = ["皆傳", "中傳", "十段", "九段", "八段"];
-const LIFE_WEIGHT: [[f32; 4]; 5] = [
+const LEVEL_NAME: [&str; 4] = ["皆傳", "中傳", "十段", "九段"];
+const LIFE_WEIGHT: [[f32; 4]; 4] = [
+    [1.0, 2.0, 4.0, 20.0],
+    [1.0, 2.0, 4.0, 25.0],
+    [0.5, 2.0, 4.0, 35.5],
     [0.0, 1.0, 2.0, 47.5],
-    [0.0, 2.0, 3.0, 47.5],
-    [0.5, 2.0, 4.0, 22.5],
-    [1.0, 2.0, 4.0, 20.0],
-    [1.0, 2.0, 4.0, 20.0],
 ];
 
 #[component]
@@ -174,7 +173,6 @@ fn ChooseLevel(
             <option value="1">"中傳"</option>
             <option value="2">"十段"</option>
             <option value="3">"九段"</option>
-            <option value="4">"八段"</option>
         </select>
     </div>
     }

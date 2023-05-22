@@ -91,62 +91,32 @@
   ],
   [
     {
-      "name": "Khronostasis Katharsis",
+      "name": "Disorder",
       "difficulty": "Insane",
-      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/1/11/Khronostasis_Katharsis_jacket.png/revision/latest/scale-to-width-down/690?cb=20200329131015",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/7/7d/Disorder_jacket.png/revision/latest/scale-to-width-down/690?cb=20200501091012",
       "level": 14,
-      "total_note": 883
+      "total_note": 918
     },
     {
-      "name": "Cereris",
+      "name": "ENERGY SYNERGY MATRIX",
       "difficulty": "Insane",
-      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/7/7e/Cereris_new_jacket.png/revision/latest?cb=20211023035058",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/3/3d/ESMBG.png/revision/latest/scale-to-width-down/690?cb=20190929145619",
       "level": 14,
-      "total_note": 898
+      "total_note": 615
     },
     {
-      "name": "Reimei",
-      "difficulty": "Insane",
-      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/5/55/Reimei_jacket.png/revision/latest?cb=20200329125155",
-      "level": 15,
-      "total_note": 983
-    },
-    {
-      "name": "GOODRAGE",
-      "difficulty": "Insane",
-      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/1/11/GOODRAGE_jacket.png/revision/latest?cb=20200717162227",
-      "level": 15,
-      "total_note": 1034
-    }
-  ],
-  [
-    {
-      "name": "Khronostasis Katharsis",
-      "difficulty": "Insane",
-      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/1/11/Khronostasis_Katharsis_jacket.png/revision/latest/scale-to-width-down/690?cb=20200329131015",
+      "name": "もぺもぺ",
+      "difficulty": "Another",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/b/be/MopemopeBG.png/revision/latest/scale-to-width-down/690?cb=20190929013049",
       "level": 14,
-      "total_note": 883
+      "total_note": 720
     },
     {
-      "name": "Cereris",
+      "name": "Cipher : /2&//<|0",
       "difficulty": "Insane",
-      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/7/7e/Cereris_new_jacket.png/revision/latest?cb=20211023035058",
+      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/e/ec/Cipher_new_jacket.png/revision/latest?cb=20211023035141",
       "level": 14,
-      "total_note": 898
-    },
-    {
-      "name": "Reimei",
-      "difficulty": "Insane",
-      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/5/55/Reimei_jacket.png/revision/latest?cb=20200329125155",
-      "level": 15,
-      "total_note": 983
-    },
-    {
-      "name": "GOODRAGE",
-      "difficulty": "Insane",
-      "image_url": "https://vignette.wikia.nocookie.net/phigros/images/1/11/GOODRAGE_jacket.png/revision/latest?cb=20200717162227",
-      "level": 15,
-      "total_note": 1034
+      "total_note": 1041
     }
   ]
 ]
