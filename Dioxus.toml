@@ -1,7 +1,8 @@
 [application]
 name = "phigros-ability"
 default_platform = "web"
-out_dir = "dist"
+out_dir = "docs"
+base_path = "phigros-ability"
 asset_dir = "public"
 
 [web.app]
