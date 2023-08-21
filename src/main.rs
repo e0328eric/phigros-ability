@@ -1,9 +1,17 @@
+#![allow(non_snake_case, unused)]
+
 mod app;
 
-use leptos::*;
+use dioxus::prelude::*;
+use log::LevelFilter;
 
-use app::*;
+use crate::app::*;
 
 fn main() {
-    mount_to_body(|cx| view! { cx, <App/> });
+    // Init debug
+    dioxus_logger::init(LevelFilter::Info).expect("failed to init logger");
+
+    log::info!("starting app");
+    //log::info!("song datas: {:?}", SONG_DATAS.get());
+    dioxus_web::launch(app::App);
 }
