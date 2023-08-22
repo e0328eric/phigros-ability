@@ -178,7 +178,7 @@ fn NormalState<'a>(
         main { class: "w-5/6 mx-auto mt-8",
             div { class: "flex justify-between items-center",
                 h2 { class: "font-bold text-base md:text-3xl", "Select the difficulty" }
-                ChooseLevel { level: level, counter: counter }
+                ChooseLevel { level: level, counter: counter, life: life }
             }
 
             if *level.get() < INVALID_LEVEL {
@@ -188,7 +188,8 @@ fn NormalState<'a>(
                     div { class: "rounded overflow-hidden shadow-lg p-4",
                         ServeData { great: great, bad: bad, miss: miss }
                         button {
-                            class: "btn hover:bg-blue-400 transition ease-out duration-300",
+                            class: r#"btn bg-blue-400 transition ease-out duration-300 rounded-full
+                                hover:bg-blue-100 px-2"#,
                             onclick: move |_| {
                                 let (great, bad, miss) = (*great.get(),*bad.get(), *miss.get());
                                 let total = song_data.total_note;
@@ -228,6 +229,7 @@ fn ChooseLevel<'a>(
     cx: Scope<'a>,
     level: &'a UseState<usize>,
     counter: &'a UseState<usize>,
+    life: &'a UseState<f32>,
 ) -> Element<'a> {
     render! {
         div { class: "relative",
@@ -242,6 +244,7 @@ fn ChooseLevel<'a>(
                         return;
                     }
                     level.set(level_data);
+                    life.set(100.0);
                     counter.set(0);
                 },
                 option { value: INVALID_LEVEL_STR, label: "難度" }
